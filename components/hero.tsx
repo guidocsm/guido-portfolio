@@ -52,9 +52,9 @@ export function Hero() {
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
             >
-              I design interfaces and build them. <strong>4+ years</strong> bridging design and development 
-              across <strong>20+ projects</strong> — eliminating handoff friction and shipping products that 
-              actually work.
+              I design interfaces and build them. 4 years bridging design and
+              development across 20+ projects — eliminating handoff friction and
+              shipping products that actually work.
             </motion.p>
 
             <motion.div

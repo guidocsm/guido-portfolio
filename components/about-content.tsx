@@ -65,7 +65,7 @@ export function AboutContent() {
           <p className="text-base leading-relaxed text-muted-foreground">
             I started as a Full-Stack developer at Ironhack, but quickly
             gravitated toward the intersection of design and code. Today, I
-            design interfaces in Figma and build them with React, Next.js,
+            design interfaces in Figma and build them with React, Next.js, Vue,
             and React Native.
           </p>
           <p className="text-base leading-relaxed text-muted-foreground">
@@ -73,9 +73,7 @@ export function AboutContent() {
             wireframes to pixel-perfect, production-ready code — eliminating
             handoff friction and accelerating iteration cycles.
           </p>
-          <p className="text-base leading-relaxed text-muted-foreground">
-            {"I\u2019ve worked with clients ranging from restaurant chains with 100+ locations to fitness networks with 15K+ members, always focused on creating products that are both beautiful and functional."}
-          </p>
+
         </motion.div>
 
         {/* Divider */}
@@ -87,10 +85,7 @@ export function AboutContent() {
             Beyond Work
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            When I'm not designing or coding, you'll find me at the gym, hunting for the 
-            best specialty coffee in town, or on a mission to find the perfect burger. 
-            I believe the best digital products come from people who are curious about 
-            the world beyond screens.
+            {"When I\u2019m not designing or coding, you\u2019ll find me at the gym, hunting for the best specialty coffee in town, or on a mission to find the perfect burger. I believe the best digital products come from people who are curious about the world beyond screens."}
           </p>
         </motion.div>
 

@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { getProject, getAdjacentProjects } from "@/lib/projects"
 import { ImageCarousel } from "@/components/image-carousel"
+import { TechTag } from "@/components/tech-tag"
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -78,9 +79,9 @@ export function ProjectDetail({ slug }: { slug: string }) {
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
         >
-          <span className="rounded-md bg-secondary px-3 py-1.5 text-xs text-muted-foreground">
-            {project.role}
-          </span>
+          {project.tags.map((tag) => (
+            <TechTag key={tag} tag={tag} />
+          ))}
           <span className="rounded-md bg-secondary px-3 py-1.5 text-xs text-muted-foreground">
             {project.year}
           </span>

@@ -27,7 +27,7 @@ export function ContactCTA() {
               guidoignaciocrespo@gmail.com
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/guidocsm/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-10 items-center rounded-lg border border-border px-5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"

@@ -31,9 +31,9 @@ export const projects: Project[] = [
     role: "Design + Development",
     year: "2025",
     stack: ["React Native", "Expo", "Figma", "Hardware Integration"],
-    tags: ["Design + Development"],
+    tags: ["Figma", "React Native"],
     challenge:
-      "Turbowash needed a payment interface for outdoor kiosks — crystal clear in bright sunlight, supporting card and cash, and communicating with wash hardware via pulse signals.",
+      "Turbowash needed a payment interface for outdoor kiosks \u2014 crystal clear in bright sunlight, supporting card and cash, and communicating with wash hardware via pulse signals.",
     myRole:
       "Complete UX/UI design in Figma and frontend development in React Native. Key challenge: integrating real-time pulse communication for wash start, pause, and completion states.",
     features: [
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     ],
     results: [
       "Deployed across 5+ locations processing real transactions daily",
-      "Zero-training interface — customers use it without assistance",
+      "Zero-training interface \u2014 customers use it without assistance",
     ],
     thumbnail: "/images/turbowash-terminal-1.png",
     cover: "/images/cover-turbowash.png",
@@ -83,9 +83,9 @@ export const projects: Project[] = [
     role: "Design + Development",
     year: "2025",
     stack: ["React", "Figma", "REST API Integration"],
-    tags: ["Design + Development"],
+    tags: ["Figma", "React"],
     challenge:
-      "Turbowash customers needed a way to manage their accounts online — wash history, vehicles, invoices, and loyalty coupons. Premium feel, simple navigation.",
+      "Turbowash customers needed a way to manage their accounts online \u2014 wash history, vehicles, invoices, and loyalty coupons. Premium feel, simple navigation.",
     myRole:
       "Interface design in Figma and frontend development. Key sections: user profile, vehicle management with type/color selector, invoice history, and coupon system.",
     features: [
@@ -242,11 +242,11 @@ export const projects: Project[] = [
     role: "Design + Development (Personal Project)",
     year: "2025",
     stack: ["React", "Figma"],
-    tags: ["Design + Development"],
+    tags: ["Figma", "React"],
     challenge:
       "A digital version of a social deduction game I love. Everyone receives a secret word except the impostor, who must blend in while others try to identify them through word clues.",
     myRole:
-      "Personal project from start to finish — game flow design, visual identity in Figma, and full development in React.",
+      "Personal project from start to finish \u2014 game flow design, visual identity in Figma, and full development in React.",
     features: [
       "Theme and secret word selection",
       "Role assignment with hidden impostor",
@@ -290,6 +290,123 @@ export const projects: Project[] = [
       {
         src: "/images/impostor-4.png",
         alt: "Impostor game setup screen",
+        type: "mobile",
+      },
+    ],
+  },
+  {
+    slug: "wetour",
+    title: "Wetour",
+    subtitle: "Community platform for Spain's leading fitness network",
+    role: "Design + Development",
+    year: "2024",
+    stack: ["Next.js", "React", "Figma", "SEO Optimization"],
+    tags: ["Figma", "Next.js"],
+    challenge:
+      "Wezone, a fitness network with 11 centers and 15K+ active members, needed a platform to unify their community \u2014 discover events, connect with sports centers, and engage with content.",
+    myRole:
+      "End-to-end design and frontend development. UX research, visual design in Figma, and production build with Next.js (SEO-first).",
+    features: [
+      "300+ sports centers directory",
+      "800+ monthly events with registration",
+      "Gamification system (challenges, WZN passport)",
+      "Payment integration for event subscriptions",
+      "1.2K+ community publications",
+    ],
+    results: [
+      "Platform live with organic growth via SEO-first architecture",
+      "New revenue stream through paid event registrations",
+    ],
+    thumbnail: "/images/wetour-desktop-5.png",
+    cover: "/images/cover-wetour.png",
+    images: [
+      {
+        src: "/images/wetour-desktop-5.png",
+        alt: "WeTour community feed with topic filters and publications",
+        type: "desktop",
+      },
+      {
+        src: "/images/wetour-desktop-6.png",
+        alt: "WeTour gym detail page showing Wezone Plaza Castilla",
+        type: "desktop",
+      },
+      {
+        src: "/images/wetour-desktop-4.png",
+        alt: "WeTour user profile with badges and achievements",
+        type: "desktop",
+      },
+      {
+        src: "/images/wetour-mobile-1.png",
+        alt: "WeTour mobile events listing",
+        type: "mobile",
+      },
+      {
+        src: "/images/wetour-mobile-2.png",
+        alt: "WeTour mobile map view with gym locations",
+        type: "mobile",
+      },
+      {
+        src: "/images/wetour-mobile-3.png",
+        alt: "WeTour mobile gym detail with reviews",
+        type: "mobile",
+      },
+    ],
+  },
+  {
+    slug: "goiko-ordering",
+    title: "Goiko Ordering",
+    subtitle:
+      "Full eCommerce platform for Spain's iconic burger chain",
+    role: "Frontend Development",
+    year: "2022-2023",
+    stack: ["Vue 3", "Vuex", "JavaScript", "Paycomet", "Deliverect", "Google Maps API"],
+    tags: ["Vue"],
+    challenge:
+      "Goiko, one of Spain's most recognized burger chains with 100+ locations, needed a custom online ordering platform. The solution had to handle delivery and pickup orders, integrate with multiple third-party services, and provide a seamless experience that matched their bold brand identity.",
+    myRole:
+      "I was responsible for the frontend development of the entire eCommerce platform. Working closely with backend developers and the design team, I built a fast, responsive application that handles real orders across all their locations daily.",
+    features: [
+      "Geolocation-based restaurant assignment for delivery and pickup",
+      "Password-less authentication via magic link email",
+      "Real-time order tracking with rider location on Google Maps",
+      "Automatic menu sync with Deliverect across all locations",
+      "Paycomet integration for secure card payments with tokenization",
+      "Scheduled orders based on kitchen capacity",
+      "Smart upselling at cart and checkout stages",
+      "Coupon validation integrated with Goiko's BI platform",
+    ],
+    results: [
+      "Live platform processing real orders daily across 100+ locations",
+      "Seamless integration with existing POS systems via Deliverect",
+      "Reduced dependency on third-party delivery apps",
+      "Conversion tracking feeding directly into business intelligence",
+    ],
+    thumbnail: "/images/goiko-desktop-1.png",
+    cover: "/images/cover-goiko.png",
+    images: [
+      {
+        src: "/images/goiko-desktop-1.png",
+        alt: "Goiko product detail modal with burger customization options",
+        type: "desktop",
+      },
+      {
+        src: "/images/goiko-desktop-5.png",
+        alt: "Goiko desktop checkout with order summary sidebar",
+        type: "desktop",
+      },
+      {
+        src: "/images/goiko-mobile-2.png",
+        alt: "Goiko mobile menu with combos and burger categories",
+        type: "mobile",
+      },
+      {
+        src: "/images/goiko-mobile-3.png",
+        alt: "Goiko mobile cart with order items and total",
+        type: "mobile",
+      },
+      {
+        src: "/images/goiko-mobile-4.png",
+        alt: "Goiko mobile checkout with personal data and pickup details",
         type: "mobile",
       },
     ],

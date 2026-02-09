@@ -4,9 +4,9 @@ export function Footer() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
-        <p className="text-sm text-muted-foreground">
-          {"guidoignaciocrespo@gmail.com"}
-        </p>
+        <a href="mailto:guidoignaciocrespo@gmail.com" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          guidoignaciocrespo@gmail.com
+        </a>
         <div className="flex items-center gap-6">
           <Link
             href="/about"
