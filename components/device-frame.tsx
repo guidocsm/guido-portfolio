@@ -27,7 +27,7 @@ export function IPhoneFrame({
             width={280}
             height={607}
             className="block h-auto w-[280px]"
-            quality={90}
+            quality={75}
           />
         </div>
         {/* Home indicator */}
@@ -62,7 +62,7 @@ export function MacBookFrame({
             width={640}
             height={400}
             className="block h-auto w-[640px]"
-            quality={90}
+            quality={75}
           />
         </div>
       </div>
@@ -101,7 +101,7 @@ export function TerminalFrame({
             width={280}
             height={607}
             className="block h-auto w-[280px]"
-            quality={90}
+            quality={75}
           />
         </div>
       </div>
