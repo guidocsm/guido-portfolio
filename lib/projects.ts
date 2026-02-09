@@ -260,7 +260,7 @@ export const projects: Project[] = [
       "Actionable redesign proposals backed by real user feedback",
       "Improved information architecture separating buyer, traveler, and payment data",
     ],
-    figmaUrl: "",
+    figmaUrl: "https://www.figma.com/design/qVgpKOx3AKkcHmHin5xduz/Iryo?node-id=1-7&t=zuFJSsDbA04gNwNX-1",
     thumbnail: "/images/iryo-1.png",
     cover: "/images/cover-iryo.jpg",
     images: [
