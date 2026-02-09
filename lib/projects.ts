@@ -170,11 +170,7 @@ export const projects: Project[] = [
         alt: "Impostor game configuration with categories",
         type: "mobile",
       },
-      {
-        src: "/images/impostor-4.png",
-        alt: "Impostor game setup screen",
-        type: "mobile",
-      },
+
     ],
   },
   {
