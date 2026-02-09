@@ -21,10 +21,10 @@ export function ContactCTA() {
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6">
             <a
-              href="mailto:guido@email.com"
+              href="mailto:guidoignaciocrespo@gmail.com"
               className="inline-flex h-10 items-center rounded-lg bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              guido@email.com
+              guidoignaciocrespo@gmail.com
             </a>
             <a
               href="https://linkedin.com"
