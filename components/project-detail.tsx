@@ -106,36 +106,39 @@ export function ProjectDetail({ slug }: { slug: string }) {
           ))}
         </motion.div>
 
-        {/* The Challenge */}
-        <motion.div {...fadeUp} className="mt-10">
-          <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            The Challenge
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {project.challenge}
-          </p>
-        </motion.div>
-
-        {/* My Role */}
-        <motion.div {...fadeUp} className="mt-8">
-          <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            My Role
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {project.myRole}
-          </p>
+        {/* Challenge & Role — 2-column grid */}
+        <motion.div {...fadeUp} className="mt-10 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border border-border bg-card p-5">
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
+              The Challenge
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+              {project.challenge}
+            </p>
+          </div>
+          <div className="rounded-xl border border-border bg-card p-5">
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
+              My Role
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+              {project.myRole}
+            </p>
+          </div>
         </motion.div>
 
         {/* Key Features */}
-        <motion.div {...fadeUp} className="mt-8">
-          <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
+        <motion.div
+          {...fadeUp}
+          className="mt-4 rounded-xl border border-border bg-card p-5"
+        >
+          <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
             Key Features
           </h2>
-          <ul className="mt-4 space-y-3">
+          <ul className="mt-3 grid gap-2.5 sm:grid-cols-2">
             {project.features.map((feature, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground"
+                className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/80"
               >
                 <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                 {feature}
@@ -146,15 +149,18 @@ export function ProjectDetail({ slug }: { slug: string }) {
 
         {/* How It Works (for Impostor Game) */}
         {project.howItWorks && (
-          <motion.div {...fadeUp} className="mt-8">
-            <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
+          <motion.div
+            {...fadeUp}
+            className="mt-4 rounded-xl border border-border bg-card p-5"
+          >
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
               How It Works
             </h2>
-            <ol className="mt-4 space-y-3">
+            <ol className="mt-3 space-y-2.5">
               {project.howItWorks.map((step, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground"
+                  className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/80"
                 >
                   <span className="mt-px flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-secondary text-xs text-primary">
                     {i + 1}
@@ -168,15 +174,18 @@ export function ProjectDetail({ slug }: { slug: string }) {
 
         {/* Why I Built This */}
         {project.whyBuilt && (
-          <motion.div {...fadeUp} className="mt-8">
-            <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
+          <motion.div
+            {...fadeUp}
+            className="mt-4 rounded-xl border border-border bg-card p-5"
+          >
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
               Why I Built This
             </h2>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-3 space-y-2.5">
               {project.whyBuilt.map((reason, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground"
+                  className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/80"
                 >
                   <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   {reason}
@@ -187,15 +196,18 @@ export function ProjectDetail({ slug }: { slug: string }) {
         )}
 
         {/* Results */}
-        <motion.div {...fadeUp} className="mt-8">
-          <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
+        <motion.div
+          {...fadeUp}
+          className="mt-4 rounded-xl border border-border bg-card p-5"
+        >
+          <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
             The Outcome
           </h2>
-          <ul className="mt-4 space-y-3">
+          <ul className="mt-3 space-y-2.5">
             {project.results.map((result, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground"
+                className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/80"
               >
                 <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                 {result}
