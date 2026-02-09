@@ -25,6 +25,100 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "turbowash-terminal",
+    title: "Turbowash Terminal",
+    subtitle: "Payment interface for automated car wash kiosks",
+    role: "Design + Development",
+    year: "2025",
+    stack: ["React Native", "Expo", "Figma", "Hardware Integration"],
+    tags: ["Design + Development"],
+    challenge:
+      "Turbowash needed a payment interface for outdoor kiosks — crystal clear in bright sunlight, supporting card and cash, and communicating with wash hardware via pulse signals.",
+    myRole:
+      "Complete UX/UI design in Figma and frontend development in React Native. Key challenge: integrating real-time pulse communication for wash start, pause, and completion states.",
+    features: [
+      "Card and cash payment support",
+      "Time-based and euro-based wash modes",
+      "Real-time pulse communication with hardware",
+      "Outdoor-optimized UI (high contrast, large touch targets)",
+    ],
+    results: [
+      "Deployed across 5+ locations processing real transactions daily",
+      "Zero-training interface — customers use it without assistance",
+    ],
+    thumbnail: "/images/turbowash-terminal-1.png",
+    cover: "/images/cover-turbowash.png",
+    images: [
+      {
+        src: "/images/turbowash-terminal-1.png",
+        alt: "Turbowash terminal home screen with pay-per-use pricing",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-2.png",
+        alt: "Turbowash wash in progress with countdown timer",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-3.png",
+        alt: "Turbowash active wash with elapsed time and amount",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-4.png",
+        alt: "Turbowash club member pricing with bonus credits",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-5.png",
+        alt: "Turbowash coupon selection screen",
+        type: "terminal",
+      },
+    ],
+  },
+  {
+    slug: "turbowash-portal",
+    title: "Turbowash Client Portal",
+    subtitle: "Customer dashboard for vehicle and service management",
+    role: "Design + Development",
+    year: "2025",
+    stack: ["React", "Figma", "REST API Integration"],
+    tags: ["Design + Development"],
+    challenge:
+      "Turbowash customers needed a way to manage their accounts online — wash history, vehicles, invoices, and loyalty coupons. Premium feel, simple navigation.",
+    myRole:
+      "Interface design in Figma and frontend development. Key sections: user profile, vehicle management with type/color selector, invoice history, and coupon system.",
+    features: [
+      "Vehicle management with visual type/color selector",
+      "Service history with detailed wash records",
+      "Invoice download and billing management",
+      "Loyalty program with coupon redemption",
+    ],
+    results: [
+      "Clean, intuitive dashboard serving Turbowash customers",
+      "Reduced support requests for billing inquiries",
+    ],
+    thumbnail: "/images/turbowash-area-cliente-1.png",
+    cover: "/images/cover-turbowash.png",
+    images: [
+      {
+        src: "/images/turbowash-area-cliente-1.png",
+        alt: "Turbowash client dashboard with QR code and service history",
+        type: "mobile",
+      },
+      {
+        src: "/images/turbowash-area-cliente-2.png",
+        alt: "Turbowash loyalty coupons list",
+        type: "mobile",
+      },
+      {
+        src: "/images/turbowash-area-cliente-3.png",
+        alt: "Turbowash vehicle management screen",
+        type: "mobile",
+      },
+    ],
+  },
+  {
     slug: "wetour",
     title: "Wetour",
     subtitle: "Community platform for Spain's leading fitness network",
@@ -83,95 +177,60 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "turbowash-terminal",
-    title: "Turbowash Terminal",
-    subtitle: "Payment interface for automated car wash kiosks",
-    role: "Design + Development",
-    year: "2024",
-    stack: ["React Native", "Expo", "Figma", "Hardware Integration"],
-    tags: ["Design + Development"],
+    slug: "goiko-ordering",
+    title: "Goiko Ordering",
+    subtitle:
+      "Full eCommerce platform for Spain's iconic burger chain",
+    role: "Frontend Development",
+    year: "2022",
+    stack: ["Vue 3", "Vuex", "JavaScript", "Paycomet", "Deliverect", "Google Maps API"],
+    tags: ["Development"],
     challenge:
-      "Turbowash needed a payment interface for outdoor kiosks — crystal clear in bright sunlight, supporting card and cash, and communicating with wash hardware via pulse signals.",
+      "Goiko, one of Spain's most recognized burger chains with 100+ locations, needed a custom online ordering platform. The solution had to handle delivery and pickup orders, integrate with multiple third-party services, and provide a seamless experience that matched their bold brand identity.",
     myRole:
-      "Complete UX/UI design in Figma and frontend development in React Native. Key challenge: integrating real-time pulse communication for wash start, pause, and completion states.",
+      "I was responsible for the frontend development of the entire eCommerce platform. Working closely with backend developers and the design team, I built a fast, responsive application that handles real orders across all their locations daily.",
     features: [
-      "Card and cash payment support",
-      "Time-based and euro-based wash modes",
-      "Real-time pulse communication with hardware",
-      "Outdoor-optimized UI (high contrast, large touch targets)",
+      "Geolocation-based restaurant assignment for delivery and pickup",
+      "Password-less authentication via magic link email",
+      "Real-time order tracking with rider location on Google Maps",
+      "Automatic menu sync with Deliverect across all locations",
+      "Paycomet integration for secure card payments with tokenization",
+      "Scheduled orders based on kitchen capacity",
+      "Smart upselling at cart and checkout stages",
+      "Coupon validation integrated with Goiko's BI platform",
     ],
     results: [
-      "Deployed across 5+ locations processing real transactions daily",
-      "Zero-training interface — customers use it without assistance",
+      "Live platform processing real orders daily across 100+ locations",
+      "Seamless integration with existing POS systems via Deliverect",
+      "Reduced dependency on third-party delivery apps",
+      "Conversion tracking feeding directly into business intelligence",
     ],
-    thumbnail: "/images/turbowash-terminal-1.png",
-    cover: "/images/cover-turbowash.png",
+    thumbnail: "/images/goiko-desktop-1.png",
+    cover: "/images/cover-goiko.png",
     images: [
       {
-        src: "/images/turbowash-terminal-1.png",
-        alt: "Turbowash terminal home screen with pay-per-use pricing",
-        type: "terminal",
+        src: "/images/goiko-desktop-1.png",
+        alt: "Goiko product detail modal with burger customization options",
+        type: "desktop",
       },
       {
-        src: "/images/turbowash-terminal-2.png",
-        alt: "Turbowash wash in progress with countdown timer",
-        type: "terminal",
+        src: "/images/goiko-desktop-5.png",
+        alt: "Goiko desktop checkout with order summary sidebar",
+        type: "desktop",
       },
       {
-        src: "/images/turbowash-terminal-3.png",
-        alt: "Turbowash active wash with elapsed time and amount",
-        type: "terminal",
-      },
-      {
-        src: "/images/turbowash-terminal-4.png",
-        alt: "Turbowash club member pricing with bonus credits",
-        type: "terminal",
-      },
-      {
-        src: "/images/turbowash-terminal-5.png",
-        alt: "Turbowash coupon selection screen",
-        type: "terminal",
-      },
-    ],
-  },
-  {
-    slug: "turbowash-portal",
-    title: "Turbowash Client Portal",
-    subtitle: "Customer dashboard for vehicle and service management",
-    role: "Design + Development",
-    year: "2024",
-    stack: ["React", "Figma", "REST API Integration"],
-    tags: ["Design + Development"],
-    challenge:
-      "Turbowash customers needed a way to manage their accounts online — wash history, vehicles, invoices, and loyalty coupons. Premium feel, simple navigation.",
-    myRole:
-      "Interface design in Figma and frontend development. Key sections: user profile, vehicle management with type/color selector, invoice history, and coupon system.",
-    features: [
-      "Vehicle management with visual type/color selector",
-      "Service history with detailed wash records",
-      "Invoice download and billing management",
-      "Loyalty program with coupon redemption",
-    ],
-    results: [
-      "Clean, intuitive dashboard serving Turbowash customers",
-      "Reduced support requests for billing inquiries",
-    ],
-    thumbnail: "/images/turbowash-area-cliente-1.png",
-    cover: "/images/cover-turbowash.png",
-    images: [
-      {
-        src: "/images/turbowash-area-cliente-1.png",
-        alt: "Turbowash client dashboard with QR code and service history",
+        src: "/images/goiko-mobile-2.png",
+        alt: "Goiko mobile menu with combos and burger categories",
         type: "mobile",
       },
       {
-        src: "/images/turbowash-area-cliente-2.png",
-        alt: "Turbowash loyalty coupons list",
+        src: "/images/goiko-mobile-3.png",
+        alt: "Goiko mobile cart with order items and total",
         type: "mobile",
       },
       {
-        src: "/images/turbowash-area-cliente-3.png",
-        alt: "Turbowash vehicle management screen",
+        src: "/images/goiko-mobile-4.png",
+        alt: "Goiko mobile checkout with personal data and pickup details",
         type: "mobile",
       },
     ],
@@ -181,7 +240,7 @@ export const projects: Project[] = [
     title: "Impostor Game",
     subtitle: "A party game about deception and deduction",
     role: "Design + Development (Personal Project)",
-    year: "2024",
+    year: "2025",
     stack: ["React", "Figma"],
     tags: ["Design + Development"],
     challenge:
