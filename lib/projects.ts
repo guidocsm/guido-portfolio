@@ -1,7 +1,17 @@
 export interface ProjectImage {
   src: string
   alt: string
-  type: "mobile" | "desktop" | "terminal"
+  type: "mobile" | "desktop" | "terminal" | "wireframe"
+}
+
+export interface UxProcess {
+  title: string
+  description: string
+}
+
+export interface UserTestInsight {
+  area: string
+  finding: string
 }
 
 export interface Project {
@@ -18,6 +28,10 @@ export interface Project {
   results: string[]
   howItWorks?: string[]
   whyBuilt?: string[]
+  uxProcess?: UxProcess[]
+  userTestInsights?: UserTestInsight[]
+  keyFindings?: string[]
+  figmaUrl?: string
   images: ProjectImage[]
   thumbnail: string
   cover: string
@@ -175,6 +189,111 @@ export const projects: Project[] = [
         type: "mobile",
       },
 
+    ],
+  },
+  {
+    slug: "iryo-booking-redesign",
+    title: "Iryo Booking Redesign",
+    subtitle: "UX/UI redesign of the ticket purchasing experience for Spain's high-speed rail operator",
+    role: "UX/UI Design",
+    year: "2024",
+    stack: ["Figma", "User Research", "Usability Testing", "Wireframing", "Prototyping"],
+    tags: ["Figma"],
+    challenge:
+      "Iryo's ticket purchasing platform presented multiple usability issues: confusing ticket type hierarchy, frustrating seat selection, intrusive upselling of add-ons, and a passenger form that blurred the line between buyer and traveler data. Users rated the experience between 3 and 9 out of 10, with an average around 6.",
+    myRole:
+      "End-to-end UX/UI design process: mapped the full user journey, conducted 9 moderated usability tests on the existing platform, synthesized findings into actionable insights, and designed high-fidelity wireframes addressing every identified pain point.",
+    features: [
+      "Searchable origin/destination fields replacing scroll-only dropdowns",
+      "Clearer ticket type hierarchy with visual differentiation between Inicial, Singular and Infinita Bistro",
+      "Redesigned seat selection with coach dropdown navigator and real-time price feedback",
+      "Streamlined upgrade flow with explicit pricing and visual confirmation states",
+      "Improved passenger forms separating buyer from traveler data clearly",
+      "Non-intrusive complementary services that don't block the purchase flow",
+    ],
+    uxProcess: [
+      {
+        title: "User Journey Mapping",
+        description: "Documented the complete 7-step purchase flow from destination selection through seat assignment, identifying each decision point and potential friction area."
+      },
+      {
+        title: "Usability Testing (9 users)",
+        description: "Conducted moderated tests observing real users navigate the existing platform. Captured confusion points, emotional responses, and task completion barriers at each stage."
+      },
+      {
+        title: "Insight Synthesis",
+        description: "Analyzed test results to identify 4 critical problem areas: visual hierarchy, form design, seat selection UX, and add-on intrusiveness."
+      },
+      {
+        title: "Wireframing & Prototyping",
+        description: "Designed high-fidelity wireframes in Figma addressing every pain point, then built interactive prototypes for each step of the redesigned flow."
+      },
+    ],
+    userTestInsights: [
+      {
+        area: "Ticket Selection",
+        finding: "Users couldn't distinguish between ticket types (Inicial, Singular, Infinita Bistro). Colors and naming were confusing, with no quick way to compare what each includes."
+      },
+      {
+        area: "Seat Selection",
+        finding: "Navigating between coaches required going one-by-one. Price changes from seat selection weren't shown in real-time, and the X icon to deselect was mistaken for deleting a passenger."
+      },
+      {
+        area: "Passenger Forms",
+        finding: "Users confused the buyer form with the traveler form. Data felt disorganized and duplicated, with no clear separation between who pays and who travels."
+      },
+      {
+        area: "Add-ons & Upselling",
+        finding: "Complementary services expanded intrusively, hiding the continue button. Users felt they lost focus and couldn't easily skip optional purchases."
+      },
+    ],
+    keyFindings: [
+      "Average user satisfaction: 6.2/10 -- with scores ranging from 3 to 9",
+      "Most confusing step: seat selection and passenger forms (cited by 7 of 9 users)",
+      "Users wanted searchable text input for station selection instead of scroll-only dropdowns",
+      "Price transparency was a recurring demand -- users wanted to know costs before committing",
+      "Visual hierarchy was rated as the top improvement area across all test participants",
+    ],
+    results: [
+      "Complete high-fidelity wireframe set covering all 5 purchase steps",
+      "9 moderated usability tests with detailed findings documentation",
+      "Actionable redesign proposals backed by real user feedback",
+      "Improved information architecture separating buyer, traveler, and payment data",
+    ],
+    figmaUrl: "",
+    thumbnail: "/images/iryo-1.png",
+    cover: "/images/cover-iryo.jpg",
+    images: [
+      {
+        src: "/images/iryo-1.png",
+        alt: "Iryo current homepage with destination selector and promotional banner",
+        type: "mobile",
+      },
+      {
+        src: "/images/iryo-2.png",
+        alt: "Iryo current schedule view with train times and ticket type pricing",
+        type: "mobile",
+      },
+      {
+        src: "/images/iryo-3.png",
+        alt: "Iryo current seat selection with coach navigator and passenger assignment",
+        type: "mobile",
+      },
+      {
+        src: "/images/iryo-4.png",
+        alt: "Wireframe: redesigned destination and date selection with searchable inputs",
+        type: "wireframe",
+      },
+      {
+        src: "/images/iryo-5.png",
+        alt: "Wireframe: redesigned schedule view with filters, upgrade flow and ticket details",
+        type: "wireframe",
+      },
+      {
+        src: "/images/iryo-6.png",
+        alt: "Wireframe: redesigned seat selection with coach dropdown and real-time price updates",
+        type: "wireframe",
+      },
     ],
   },
   {
