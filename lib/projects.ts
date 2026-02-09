@@ -25,27 +25,179 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "turbowash-terminal",
+    title: "Turbowash Terminal",
+    subtitle: "Payment interface for automated car wash kiosks",
+    role: "Design + Development",
+    year: "2025",
+    stack: ["React Native", "Expo", "Figma", "Hardware Integration"],
+    tags: ["Figma", "React Native"],
+    challenge:
+      "Turbowash needed a payment interface for outdoor kiosks \u2014 crystal clear in bright sunlight, supporting card and cash, and communicating with wash hardware via pulse signals.",
+    myRole:
+      "Complete UX/UI design in Figma and frontend development in React Native. Key challenge: integrating real-time pulse communication for wash start, pause, and completion states.",
+    features: [
+      "Card and cash payment support",
+      "Time-based and euro-based wash modes",
+      "Real-time pulse communication with hardware",
+      "Outdoor-optimized UI (high contrast, large touch targets)",
+    ],
+    results: [
+      "Deployed across 5+ locations processing real transactions daily",
+      "Zero-training interface \u2014 customers use it without assistance",
+    ],
+    thumbnail: "/images/turbowash-terminal-1.png",
+    cover: "/images/cover-turbowash.png",
+    images: [
+      {
+        src: "/images/turbowash-terminal-1.png",
+        alt: "Turbowash terminal home screen with pay-per-use pricing",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-2.png",
+        alt: "Turbowash wash in progress with countdown timer",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-3.png",
+        alt: "Turbowash active wash with elapsed time and amount",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-4.png",
+        alt: "Turbowash club member pricing with bonus credits",
+        type: "terminal",
+      },
+      {
+        src: "/images/turbowash-terminal-5.png",
+        alt: "Turbowash coupon selection screen",
+        type: "terminal",
+      },
+    ],
+  },
+  {
+    slug: "turbowash-portal",
+    title: "Turbowash Client Portal",
+    subtitle: "Customer dashboard for vehicle and service management",
+    role: "Design + Development",
+    year: "2025",
+    stack: ["React", "Figma", "REST API Integration"],
+    tags: ["Figma", "React"],
+    challenge:
+      "Turbowash customers needed a way to manage their accounts online \u2014 wash history, vehicles, invoices, and loyalty coupons. Premium feel, simple navigation.",
+    myRole:
+      "Interface design in Figma and frontend development. Key sections: user profile, vehicle management with type/color selector, invoice history, and coupon system.",
+    features: [
+      "Vehicle management with visual type/color selector",
+      "Service history with detailed wash records",
+      "Invoice download and billing management",
+      "Loyalty program with coupon redemption",
+    ],
+    results: [
+      "Clean, intuitive dashboard serving Turbowash customers",
+      "Reduced support requests for billing inquiries",
+    ],
+    thumbnail: "/images/turbowash-area-cliente-1.png",
+    cover: "/images/cover-turbowash.png",
+    images: [
+      {
+        src: "/images/turbowash-area-cliente-1.png",
+        alt: "Turbowash client dashboard with QR code and service history",
+        type: "mobile",
+      },
+      {
+        src: "/images/turbowash-area-cliente-2.png",
+        alt: "Turbowash loyalty coupons list",
+        type: "mobile",
+      },
+      {
+        src: "/images/turbowash-area-cliente-3.png",
+        alt: "Turbowash vehicle management screen",
+        type: "mobile",
+      },
+    ],
+  },
+  {
+    slug: "impostor-game",
+    title: "Impostor Game",
+    subtitle: "A party game about deception and deduction",
+    role: "Design + Development (Personal Project)",
+    year: "2025",
+    stack: ["React", "Figma"],
+    tags: ["Figma", "React"],
+    challenge:
+      "A digital version of a social deduction game I love. Everyone receives a secret word except the impostor, who must blend in while others try to identify them through word clues.",
+    myRole:
+      "Personal project from start to finish \u2014 game flow design, visual identity in Figma, and full development in React.",
+    features: [
+      "Theme and secret word selection",
+      "Role assignment with hidden impostor",
+      "Turn-based clue giving system",
+      "Voting and reveal mechanics",
+    ],
+    howItWorks: [
+      "Choose a theme and secret word",
+      "All players except the impostor see the word",
+      "Players take turns giving one-word clues",
+      "Vote on who you think is the impostor",
+      "Impostor wins if they stay hidden or guess the word",
+    ],
+    whyBuilt: [
+      "Creating things that bring people together",
+      "Challenge myself with game logic and state management",
+      "Perfect excuse to obsess over micro-interactions",
+    ],
+    results: [
+      "Successfully used at multiple game nights",
+      "Friends keep asking me to add new features",
+    ],
+    thumbnail: "/images/impostor-1.png",
+    cover: "/images/cover-impostor.png",
+    images: [
+      {
+        src: "/images/impostor-1.png",
+        alt: "Impostor game role reveal screen",
+        type: "mobile",
+      },
+      {
+        src: "/images/impostor-2.png",
+        alt: "Impostor game lobby with room code and players",
+        type: "mobile",
+      },
+      {
+        src: "/images/impostor-3.png",
+        alt: "Impostor game configuration with categories",
+        type: "mobile",
+      },
+      {
+        src: "/images/impostor-4.png",
+        alt: "Impostor game setup screen",
+        type: "mobile",
+      },
+    ],
+  },
+  {
     slug: "wetour",
     title: "Wetour",
     subtitle: "Community platform for Spain's leading fitness network",
     role: "Design + Development",
     year: "2024",
     stack: ["Next.js", "React", "Figma", "SEO Optimization"],
-    tags: ["Design + Dev"],
+    tags: ["Figma", "Next.js"],
     challenge:
-      "Wezone, a fitness network with 11 centers and 15K+ active members, needed a digital platform to unify their community. They wanted a space where members could discover events, connect with sports centers, and engage with content \u2014 all while driving new monetization opportunities.",
+      "Wezone, a fitness network with 11 centers and 15K+ active members, needed a platform to unify their community \u2014 discover events, connect with sports centers, and engage with content.",
     myRole:
-      "I led the end-to-end design and frontend development. From UX research and wireframing to visual design in Figma, then building the production frontend with Next.js, prioritizing SEO and performance.",
+      "End-to-end design and frontend development. UX research, visual design in Figma, and production build with Next.js (SEO-first).",
     features: [
       "300+ sports centers directory",
       "800+ monthly events with registration",
       "Gamification system (challenges, WZN passport)",
       "Payment integration for event subscriptions",
-      "Community content with 1.2K+ publications",
+      "1.2K+ community publications",
     ],
     results: [
-      "Platform live and serving 15K+ active members",
-      "SEO-first architecture driving organic discovery",
+      "Platform live with organic growth via SEO-first architecture",
       "New revenue stream through paid event registrations",
     ],
     thumbnail: "/images/wetour-desktop-5.png",
@@ -84,101 +236,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "turbowash-terminal",
-    title: "Turbowash Terminal",
-    subtitle: "Payment interface for automated car wash kiosks",
-    role: "Design + Development",
-    year: "2024",
-    stack: ["React Native", "Expo", "Figma", "Hardware Integration"],
-    tags: ["Design + Dev"],
-    challenge:
-      "Turbowash needed a payment interface for their car wash terminals \u2014 outdoor kiosks where customers pay with card or cash and control their wash. The interface had to be crystal clear, work in bright sunlight, and communicate with hardware systems via pulse signals.",
-    myRole:
-      "I designed the complete UX/UI in Figma and led the frontend development in React Native. The biggest challenge was integrating the pulse communication system that controls wash start, pause, and completion states in real-time.",
-    features: [
-      "Card and cash payment support",
-      "Time-based and euro-based wash modes",
-      "Real-time pulse communication with wash hardware",
-      "Outdoor-optimized UI (high contrast, large touch targets)",
-    ],
-    results: [
-      "Deployed across 5+ locations",
-      "Processing real transactions daily",
-      "Zero-training interface \u2014 customers use it without assistance",
-    ],
-    thumbnail: "/images/turbowash-terminal-1.png",
-    cover: "/images/cover-turbowash.png",
-    images: [
-      {
-        src: "/images/turbowash-terminal-1.png",
-        alt: "Turbowash terminal home screen with pay-per-use pricing",
-        type: "terminal",
-      },
-      {
-        src: "/images/turbowash-terminal-2.png",
-        alt: "Turbowash wash in progress with countdown timer",
-        type: "terminal",
-      },
-      {
-        src: "/images/turbowash-terminal-3.png",
-        alt: "Turbowash active wash with elapsed time and amount",
-        type: "terminal",
-      },
-      {
-        src: "/images/turbowash-terminal-4.png",
-        alt: "Turbowash club member pricing with bonus credits",
-        type: "terminal",
-      },
-      {
-        src: "/images/turbowash-terminal-5.png",
-        alt: "Turbowash coupon selection screen",
-        type: "terminal",
-      },
-    ],
-  },
-  {
-    slug: "turbowash-portal",
-    title: "Turbowash Client Portal",
-    subtitle: "Customer dashboard for vehicle and service management",
-    role: "Design + Development",
-    year: "2024",
-    stack: ["React", "Figma", "REST API Integration"],
-    tags: ["Design + Dev"],
-    challenge:
-      "Turbowash customers needed a way to manage their accounts online \u2014 view wash history, manage vehicles, download invoices, and redeem loyalty coupons. The portal had to feel premium while being simple to navigate.",
-    myRole:
-      "I designed the interface in Figma and developed key sections including user profile, vehicle management (with type and color selection), invoice history, and the loyalty coupon system.",
-    features: [
-      "Vehicle management with visual type/color selector",
-      "Service history with detailed wash records",
-      "Invoice download and billing management",
-      "Loyalty program with coupon redemption",
-    ],
-    results: [
-      "Clean, intuitive dashboard now serving Turbowash customers",
-      "Reduced support requests for billing inquiries",
-    ],
-    thumbnail: "/images/turbowash-area-cliente-1.png",
-    cover: "/images/cover-turbowash.png",
-    images: [
-      {
-        src: "/images/turbowash-area-cliente-1.png",
-        alt: "Turbowash client dashboard with QR code and service history",
-        type: "mobile",
-      },
-      {
-        src: "/images/turbowash-area-cliente-2.png",
-        alt: "Turbowash loyalty coupons list",
-        type: "mobile",
-      },
-      {
-        src: "/images/turbowash-area-cliente-3.png",
-        alt: "Turbowash vehicle management screen",
-        type: "mobile",
-      },
-    ],
-  },
-  {
     slug: "goiko-ordering",
     title: "Goiko Ordering",
     subtitle:
@@ -186,7 +243,7 @@ export const projects: Project[] = [
     role: "Frontend Development",
     year: "2022-2023",
     stack: ["Vue 3", "Vuex", "JavaScript", "Paycomet", "Deliverect", "Google Maps API"],
-    tags: ["Development"],
+    tags: ["Vue"],
     challenge:
       "Goiko, one of Spain's most recognized burger chains with 100+ locations, needed a custom online ordering platform. The solution had to handle delivery and pickup orders, integrate with multiple third-party services, and provide a seamless experience that matched their bold brand identity.",
     myRole:
@@ -233,66 +290,6 @@ export const projects: Project[] = [
       {
         src: "/images/goiko-mobile-4.png",
         alt: "Goiko mobile checkout with personal data and pickup details",
-        type: "mobile",
-      },
-    ],
-  },
-  {
-    slug: "impostor-game",
-    title: "Impostor Game",
-    subtitle: "A party game about deception and deduction",
-    role: "Design + Development (Personal Project)",
-    year: "2024",
-    stack: ["React", "Figma"],
-    tags: ["Design + Dev"],
-    challenge:
-      "I wanted to create a digital version of a social deduction game I love playing with friends. The concept: everyone receives a secret word except one player (the impostor), who must blend in while others try to identify them through word association clues.",
-    myRole:
-      "This was a personal project from start to finish. I designed the game flow, visual identity, and UI in Figma, then built the entire application myself.",
-    features: [
-      "Theme and secret word selection",
-      "Role assignment with hidden impostor",
-      "Turn-based clue giving system",
-      "Voting and reveal mechanics",
-    ],
-    howItWorks: [
-      "Choose a theme and secret word",
-      "All players except the impostor see the word",
-      "Players take turns giving one-word clues",
-      "The impostor tries to blend in while guessing the word",
-      "Vote on who you think is the impostor",
-      "Impostor wins if they stay hidden or guess the word",
-    ],
-    whyBuilt: [
-      "I love creating things that bring people together",
-      "Wanted to challenge myself with game logic and state management",
-      "Perfect excuse to obsess over micro-interactions",
-    ],
-    results: [
-      "Successfully used at multiple game nights",
-      "Friends keep asking me to add new features",
-    ],
-    thumbnail: "/images/impostor-1.png",
-    cover: "/images/cover-impostor.png",
-    images: [
-      {
-        src: "/images/impostor-1.png",
-        alt: "Impostor game role reveal screen",
-        type: "mobile",
-      },
-      {
-        src: "/images/impostor-2.png",
-        alt: "Impostor game lobby with room code and players",
-        type: "mobile",
-      },
-      {
-        src: "/images/impostor-3.png",
-        alt: "Impostor game configuration with categories",
-        type: "mobile",
-      },
-      {
-        src: "/images/impostor-4.png",
-        alt: "Impostor game setup screen",
         type: "mobile",
       },
     ],

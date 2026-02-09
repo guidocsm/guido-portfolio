@@ -53,8 +53,8 @@ export function Hero() {
               }}
             >
               I design interfaces and build them. 4 years bridging design and
-              development across 20+ projects — from fitness platforms with 15K+
-              users to payment terminals processing real transactions.
+              development across 20+ projects — eliminating handoff friction and
+              shipping products that actually work.
             </motion.p>
 
             <motion.div
@@ -93,7 +93,7 @@ export function Hero() {
                 About Me
               </Link>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/guidocsm/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 items-center px-2 text-sm text-muted-foreground transition-colors hover:text-foreground"

@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import type { Project } from "@/lib/projects"
+import { TechTag } from "@/components/tech-tag"
 
 export function ProjectCard({
   project,
@@ -53,12 +54,7 @@ export function ProjectCard({
           </p>
           <div className="mt-2.5 flex flex-wrap gap-1.5">
             {project.tags.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-md bg-secondary px-2 py-0.5 text-xs text-muted-foreground"
-              >
-                {tag}
-              </span>
+              <TechTag key={tag} tag={tag} />
             ))}
           </div>
         </div>
