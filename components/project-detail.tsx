@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { getProject, getAdjacentProjects } from "@/lib/projects"
 import { ImageCarousel } from "@/components/image-carousel"
 import { TechTag } from "@/components/tech-tag"
+import { ExternalLink } from "lucide-react"
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -65,6 +66,16 @@ export function ProjectDetail({ slug }: { slug: string }) {
             <p className="mt-1 text-base text-muted-foreground">
               {project.subtitle}
             </p>
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 text-sm text-primary transition-opacity hover:opacity-80"
+              >
+                Visit project <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            )}
           </div>
         </motion.div>
 

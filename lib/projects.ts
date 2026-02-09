@@ -21,6 +21,7 @@ export interface Project {
   images: ProjectImage[]
   thumbnail: string
   cover: string
+  url?: string
 }
 
 export const projects: Project[] = [
@@ -28,6 +29,7 @@ export const projects: Project[] = [
     slug: "turbowash-terminal",
     title: "Turbowash Terminal",
     subtitle: "Payment interface for automated car wash kiosks",
+    url: "https://turbowash.es/",
     role: "Design + Development",
     year: "2025",
     stack: ["React Native", "Expo", "Figma", "Hardware Integration"],
@@ -80,6 +82,7 @@ export const projects: Project[] = [
     slug: "turbowash-portal",
     title: "Turbowash Client Portal",
     subtitle: "Customer dashboard for vehicle and service management",
+    url: "https://turbowash.es/",
     role: "Design + Development",
     year: "2025",
     stack: ["React", "Figma", "REST API Integration"],
@@ -122,6 +125,7 @@ export const projects: Project[] = [
     slug: "impostor-game",
     title: "Impostor Game",
     subtitle: "A party game about deception and deduction",
+    url: "https://imp0stor.netlify.app/",
     role: "Design + Development (Personal Project)",
     year: "2025",
     stack: ["React", "Figma"],
@@ -177,6 +181,7 @@ export const projects: Project[] = [
     slug: "wetour",
     title: "Wetour",
     subtitle: "Community platform for Spain's leading fitness network",
+    url: "https://wetourfit.com/",
     role: "Design + Development",
     year: "2024",
     stack: ["Next.js", "React", "Figma", "SEO Optimization"],
@@ -236,6 +241,7 @@ export const projects: Project[] = [
     title: "Goiko Ordering",
     subtitle:
       "Full eCommerce platform for Spain's iconic burger chain",
+    url: "https://www.goiko.com/es/delivery",
     role: "Frontend Development",
     year: "2022-2023",
     stack: ["Vue 3", "Vuex", "JavaScript", "Paycomet", "Deliverect", "Google Maps API"],
