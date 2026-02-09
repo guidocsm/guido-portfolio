@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          {"guidoignaciocrespo@gmail.com"}
+          {"guido@email.com"}
         </p>
         <div className="flex items-center gap-6">
           <Link
@@ -15,7 +15,7 @@ export function Footer() {
             About
           </Link>
           <a
-            href="https://www.linkedin.com/in/guidocsm/"
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -23,6 +23,9 @@ export function Footer() {
             LinkedIn
           </a>
         </div>
+        <p className="text-xs text-muted-foreground/60">
+          {"Built with Next.js & Tailwind"}
+        </p>
       </div>
     </footer>
   )
