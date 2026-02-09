@@ -3,11 +3,14 @@
 import { useState, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import type { ProjectImage } from "@/lib/projects"
-import { IPhoneFrame, MacBookFrame, TerminalFrame } from "@/components/device-frame"
+import { IPhoneFrame, MacBookFrame, TerminalFrame, WireframeFrame } from "@/components/device-frame"
 
 function DeviceImage({ image }: { image: ProjectImage }) {
   if (image.type === "terminal") {
     return <TerminalFrame src={image.src} alt={image.alt} />
+  }
+  if (image.type === "wireframe") {
+    return <WireframeFrame src={image.src} alt={image.alt} />
   }
   if (image.type === "mobile") {
     return <IPhoneFrame src={image.src} alt={image.alt} />
@@ -40,7 +43,7 @@ export function ImageCarousel({ images }: { images: ProjectImage[] }) {
   if (images.length === 0) return null
 
   const currentImage = images[current]
-  const isWide = currentImage.type === "desktop"
+  const isWide = currentImage.type === "desktop" || currentImage.type === "wireframe"
 
   const slideVariants = {
     enter: (dir: number) => ({

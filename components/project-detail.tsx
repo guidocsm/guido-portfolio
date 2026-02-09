@@ -66,16 +66,28 @@ export function ProjectDetail({ slug }: { slug: string }) {
             <p className="mt-1 text-base text-muted-foreground">
               {project.subtitle}
             </p>
-            {project.url && (
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1.5 text-sm text-primary transition-opacity hover:opacity-80"
-              >
-                Visit project <ExternalLink className="h-3.5 w-3.5" />
-              </a>
-            )}
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-primary transition-opacity hover:opacity-80"
+                >
+                  Visit project <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              )}
+              {project.figmaUrl && (
+                <a
+                  href={project.figmaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-primary transition-opacity hover:opacity-80"
+                >
+                  View in Figma <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              )}
+            </div>
           </div>
         </motion.div>
 
@@ -189,6 +201,88 @@ export function ProjectDetail({ slug }: { slug: string }) {
                 >
                   <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   {reason}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+
+        {/* UX Process */}
+        {project.uxProcess && (
+          <motion.div
+            {...fadeUp}
+            className="mt-4 rounded-xl border border-border bg-card p-5"
+          >
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
+              UX Process
+            </h2>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              {project.uxProcess.map((step, i) => (
+                <div
+                  key={i}
+                  className="flex gap-3"
+                >
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary text-xs font-medium text-primary">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="text-sm font-medium text-foreground">
+                      {step.title}
+                    </h3>
+                    <p className="mt-1 text-sm leading-relaxed text-foreground/70">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {/* User Test Insights */}
+        {project.userTestInsights && (
+          <motion.div
+            {...fadeUp}
+            className="mt-4 rounded-xl border border-border bg-card p-5"
+          >
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
+              User Testing Insights
+            </h2>
+            <div className="mt-4 grid gap-3">
+              {project.userTestInsights.map((insight, i) => (
+                <div
+                  key={i}
+                  className="rounded-lg border border-border bg-secondary/30 p-4"
+                >
+                  <span className="inline-block rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
+                    {insight.area}
+                  </span>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/80">
+                    {insight.finding}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {/* Key Findings */}
+        {project.keyFindings && (
+          <motion.div
+            {...fadeUp}
+            className="mt-4 rounded-xl border border-border bg-card p-5"
+          >
+            <h2 className="text-xs font-medium uppercase tracking-widest text-primary">
+              Key Findings
+            </h2>
+            <ul className="mt-3 space-y-2.5">
+              {project.keyFindings.map((finding, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/80"
+                >
+                  <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                  {finding}
                 </li>
               ))}
             </ul>

@@ -74,6 +74,33 @@ export function MacBookFrame({
   )
 }
 
+export function WireframeFrame({
+  src,
+  alt,
+  className = "",
+}: {
+  src: string
+  alt: string
+  className?: string
+}) {
+  return (
+    <div
+      className={`relative inline-flex items-center justify-center ${className}`}
+    >
+      <div className="relative overflow-hidden rounded-xl border-2 border-dashed border-muted-foreground/30 bg-secondary/30 p-2 shadow-lg">
+        <Image
+          src={src || "/placeholder.svg"}
+          alt={alt}
+          width={800}
+          height={500}
+          className="block h-auto max-w-full rounded-lg"
+          quality={75}
+        />
+      </div>
+    </div>
+  )
+}
+
 export function TerminalFrame({
   src,
   alt,
