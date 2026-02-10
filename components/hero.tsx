@@ -96,9 +96,9 @@ export function Hero() {
                 href="https://www.linkedin.com/in/guidocsm/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-10 items-center px-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="inline-flex h-10 items-center rounded-lg border border-border px-5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
               >
-                {'LinkedIn \u2197'}
+                LinkedIn
               </a>
             </motion.div>
           </div>

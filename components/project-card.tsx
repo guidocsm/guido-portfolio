@@ -26,7 +26,7 @@ export function ProjectCard({
     >
       <Link
         href={`/projects/${project.slug}`}
-        className="group flex items-start gap-4 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30 hover:bg-card/80"
+        className="group flex h-full min-h-[120px] items-start gap-4 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30 hover:bg-card/80"
       >
         {/* Circular cover */}
         <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-border sm:h-20 sm:w-20">
@@ -49,7 +49,7 @@ export function ProjectCard({
               {project.year}
             </span>
           </div>
-          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
             {project.subtitle}
           </p>
           <div className="mt-2.5 flex flex-wrap gap-1.5">
