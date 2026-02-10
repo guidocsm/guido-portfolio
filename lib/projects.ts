@@ -154,13 +154,7 @@ export const projects: Project[] = [
       "Turn-based clue giving system",
       "Voting and reveal mechanics",
     ],
-    howItWorks: [
-      "Choose a theme and secret word",
-      "All players except the impostor see the word",
-      "Players take turns giving one-word clues",
-      "Vote on who you think is the impostor",
-      "Impostor wins if they stay hidden or guess the word",
-    ],
+
     whyBuilt: [
       "Creating things that bring people together",
       "Challenge myself with game logic and state management",
